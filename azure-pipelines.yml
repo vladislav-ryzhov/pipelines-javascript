@@ -23,6 +23,6 @@ steps:
     targets: 
     gruntCli: 'node_modules/grunt-cli/bin/grunt'
     publishJUnitResults: true
-    testResultsFiles: '**/.js'
+    testResultsFiles: '**/*.js'
     enableCodeCoverage: true
     testFiles: 'test/*.js'
