@@ -20,7 +20,7 @@ steps:
 - task: gulpTaskLib@0
   inputs:
     gulpFile: 'gulpfile.js'
-    targets: test
+    targets:
     gulpjs: 'node_modules/gulp/bin/gulp.js'
     publishJUnitResults: true
     testResultsFiles: '**/TEST-*.xml'
