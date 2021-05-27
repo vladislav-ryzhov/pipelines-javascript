@@ -17,12 +17,12 @@ steps:
 - script: |
     npm install
   displayName: 'npm ins'
-- task: Grunt@0
+- task: gulp@0
   inputs:
-    gruntFile: 'gruntfile.js'
+    gulpFile: 'gulpfile.js'
     targets: 
-    gruntCli: 'node_modules/grunt-cli/bin/grunt'
+    gulpjs: 'node_modules/gulp/bin/gulp.js'
     publishJUnitResults: true
-    testResultsFiles: 'test/*.js'
+    testResultsFiles: '**/TEST-*.xml'
     enableCodeCoverage: true
     testFiles: 'test/*.js'
